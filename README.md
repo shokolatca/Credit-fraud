@@ -92,7 +92,7 @@
   - `loan_amount`, `term`, `purpose`,
   - `verification_status`, `home_ownership`, `address_state`,
   - `emp_length`,
-  - `grade/sub_grade` (по решению убираем grade),
+  - `grade/sub_grade` (по решению убрали grade),
   - текстовые фичи из `emp_title`.
 - Запрещено (leakage): `total_payment`, платежные даты и производные из них.
 
@@ -120,8 +120,7 @@
 ## 6) Структура проекта
 
 - `eda_financial_loan.ipynb` — EDA.
-- `feature_engineering.ipynb` — генерация признаков и итоговый датасет под задачу fraud.
-- `train_model.ipynb` — обучение моделей, Optuna, валидация, SHAP/LIME, анализ ошибок.
+- `train_model_*.ipynb` — обучение моделей, Optuna, валидация, SHAP/LIME, анализ ошибок (* - трек задачи).
 - `financial_loan.csv` — исходные данные.
 
 ---
